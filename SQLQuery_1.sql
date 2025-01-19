@@ -1,0 +1,2 @@
+SELECT*
+fROM Person.Person
