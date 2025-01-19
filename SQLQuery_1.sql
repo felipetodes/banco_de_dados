@@ -1,2 +1,4 @@
 SELECT*
 fROM Person.Person
+
+--# SQL OPERAÇÕES EM STRING (AVANÇADO)
