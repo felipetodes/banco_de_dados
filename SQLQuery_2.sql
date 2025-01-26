@@ -98,3 +98,8 @@ INSERT INTO aula(id,nome)
 VALUES(34,'AULA34'),(35,'AULA35'),(36,'AULA36'),(37,'AULA37'),(38,'AULA38'),(39,'AULA39'),(40,'AULA41'),(41,'AULA41'),(42,'AULA42')
 
 SELECT * INTO TABELANOVA FROM AULA
+
+UPDATE aula
+SET nome = 'teste2'
+where id = 4
+
