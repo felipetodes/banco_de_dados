@@ -136,14 +136,32 @@ TRUNCATE table Person.PASSWORD
 Select *
 FROM Person.PASSWORD
 
-CREATE TABLE CarteiraMotorista (
-    Id int NOT NULL,
-    Nome varchar(255) not null,
+CREATE TABLE CarteiraMotorista2 (
+    Id int primary key NOT NULL IDENTITY,
+    Nome varchar(255),
     Idade int CHECK (Idade >= 18)
 )
 
 select *
-from CarteiraMotorista
+from CarteiraMotorista3
 
-insert into CarteiraMotorista (id,nome,idade)
-VALUES (1, 'Felipe', 18)
+
+
+insert into CarteiraMotorista3 (nome,idade,CodigoCNH)
+VALUES ('oiiiiiiii', 19, 141414)
+
+
+CREATE TABLE CarteiraMotorista3 (
+    Id int primary key NOT NULL IDENTITY,
+    Nome varchar(255),
+    Idade int CHECK (Idade >= 18),
+    CodigoCNH int not null UNIQUE
+)
+
+CREATE VIEW [Pessoas Simplificado] AS 
+SELECT FirstName, MiddleName, LastName
+FROM Person.Person
+Where Title = 'Ms.'
+
+select*
+from [Pessoas Simplificado]
