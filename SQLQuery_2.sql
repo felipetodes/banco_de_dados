@@ -141,3 +141,9 @@ CREATE TABLE CarteiraMotorista (
     Nome varchar(255) not null,
     Idade int CHECK (Idade >= 18)
 )
+
+select *
+from CarteiraMotorista
+
+insert into CarteiraMotorista (id,nome,idade)
+VALUES (1, 'Felipe', 18)
