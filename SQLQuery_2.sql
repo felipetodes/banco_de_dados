@@ -49,3 +49,15 @@ VALUES (15, 'Canal L', NULL, '2020-01-03 12:00:00');
 
 SELECT *
 FROM Canal
+
+
+CREATE TABLE Video(
+VideoId INT PRIMARY KEY,
+Nome VARCHAR(150) NOT NULL,
+Visualizacoes INT DEFAULT 0,
+Likes INT DEFAULT 0,
+Dislikes INT DEFAULT 0,
+Duracao INT NOT NULL,
+CanalId INT FOREIGN KEY REFERENCES Canal(CanalId)
+
+);
