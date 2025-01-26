@@ -80,3 +80,16 @@ INSERT INTO Video (VideoId, Nome, Visualizacoes, Likes, Dislikes, Duracao, Canal
 
 SELECT *
 FROM Video
+
+
+CREATE TABLE Aula(
+    id int PRIMARY KEY,
+    nome varchar(200)
+)
+
+
+select*
+from aula
+
+INSERT INTO aula(id,nome)
+VALUES(11,'AULA11'),(12,'AULA12'),(13,'AULA13'),(14,'AULA14'),(15,'AULA15'),(16,'AULA16'),(17,'AULA17'),(18,'AULA18'),(19,'AULA19'),(20,'AULA20')
