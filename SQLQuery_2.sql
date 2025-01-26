@@ -128,3 +128,22 @@ ALTER COLUMN categoria varchar(300) not null
 EXEC sp_RENAME 'youtube2.nome', 'nomeCanal', 'COLUMN'
 
 EXEC sp_RENAME 'youtube2', 'youtube4'
+
+drop table youtube4
+
+TRUNCATE table Person.PASSWORD
+
+Select *
+FROM Person.PASSWORD
+
+CREATE TABLE CarteiraMotorista (
+    Id int NOT NULL,
+    Nome varchar(255) not null,
+    Idade int CHECK (Idade >= 18)
+)
+
+select *
+from CarteiraMotorista
+
+insert into CarteiraMotorista (id,nome,idade)
+VALUES (1, 'Felipe', 18)
