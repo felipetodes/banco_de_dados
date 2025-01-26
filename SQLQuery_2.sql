@@ -103,3 +103,18 @@ UPDATE aula
 SET nome = 'teste2'
 where id = 4
 
+
+DELETE FROM Aula
+WHERE nome = 'teste2'
+
+CREATE TABLE youtube2(
+    id int primary key,
+    nome varchar(150) not null,
+    categoria varchar(200) not null,
+    dataCriacao DATETIME not null
+
+)
+
+
+select*
+from youtube2
