@@ -61,3 +61,22 @@ Duracao INT NOT NULL,
 CanalId INT FOREIGN KEY REFERENCES Canal(CanalId)
 
 );
+
+INSERT INTO dbo.Video (VideoId, Nome, Visualizacoes, Likes, Dislikes, Duracao, CanalId)
+VALUES (1, 'Meu nome é', NULL, '2020-01-03 12:00:00');
+
+
+INSERT INTO Video (VideoId, Nome, Visualizacoes, Likes, Dislikes, Duracao, CanalId) VALUES
+(1, 'Video A', 1000, 100, 10, 300, null),
+(2, 'Video B', 2000, 200, 20, 400, null),
+(3, 'Video C', 3000, 300, 30, 500, null),
+(4, 'Video D', 4000, 400, 40, 600, null),
+(5, 'Video E', 5000, 500, 50, 700, null),
+(6, 'Video F', 6000, 600, 60, 800, null),
+(7, 'Video G', 7000, 700, 70, 900, null),
+(8, 'Video H', 8000, 800, 80, 1000, null),
+(9, 'Video I', 9000, 900, 90, 1100, null),
+(10, 'Video J', 10000, 1000, 100, 1200, null);
+
+SELECT *
+FROM Video
