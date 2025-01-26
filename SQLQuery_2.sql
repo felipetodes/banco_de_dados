@@ -128,3 +128,10 @@ ALTER COLUMN categoria varchar(300) not null
 EXEC sp_RENAME 'youtube2.nome', 'nomeCanal', 'COLUMN'
 
 EXEC sp_RENAME 'youtube2', 'youtube4'
+
+drop table youtube4
+
+TRUNCATE table Person.PASSWORD
+
+Select *
+FROM Person.PASSWORD
