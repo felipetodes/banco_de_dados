@@ -118,3 +118,11 @@ CREATE TABLE youtube2(
 
 select*
 from youtube2
+
+ALTER TABLE Youtube2
+ADD ATIVO BIT
+
+ALTER TABLE youtube2
+ALTER COLUMN categoria varchar(300) not null
+
+EXEC sp_RENAME 'youtube2.nome', 'nomeCanal', 'COLUMN'
