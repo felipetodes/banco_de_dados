@@ -135,3 +135,9 @@ TRUNCATE table Person.PASSWORD
 
 Select *
 FROM Person.PASSWORD
+
+CREATE TABLE CarteiraMotorista (
+    Id int NOT NULL,
+    Nome varchar(255) not null,
+    Idade int CHECK (Idade >= 18)
+)
