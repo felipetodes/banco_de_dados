@@ -1,4 +1,3 @@
-import random;
 
 CREATE TABLE Canal(
     CanalId INT PRIMARY KEY,
@@ -48,3 +47,5 @@ VALUES (15, 'Canal L', NULL, '2020-01-03 12:00:00');
 
 
 
+SELECT *
+FROM Canal
